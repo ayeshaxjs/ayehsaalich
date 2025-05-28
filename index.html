@@ -21,13 +21,24 @@
     }
 
     body {
-      background: linear-gradient(to bottom right, var(--violet), var(--purple));
+      background: 
+        linear-gradient(to bottom right, rgba(138, 43, 226, 0.6), rgba(106, 13, 173, 0.6)),
+        url('WhatsApp Image 2025-05-28 at 17.42.14_113c8c46.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: var(--text-color);
       min-height: 100vh;
     }
 
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+
     header {
-      background: var(--purple);
+      background: rgba(106, 13, 173, 0.85);
       padding: 30px 20px;
       text-align: center;
       color: white;
@@ -95,95 +106,96 @@
   </style>
 </head>
 <body>
+  <div class="overlay">
 
-  <header>
-    <h1>Ayesha Ali Chaudhry</h1>
-    <p>Computer Science Student</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#interests">Interests</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <header>
+      <h1>Ayesha Ali Chaudhry</h1>
+      <p>Computer Science Student</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#interests">Interests</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <section id="about">
-    <div class="section-title">About Me</div>
-    <div class="card">
-      <p>
-        Hi! I'm Ayesha Ali Chaudhry, currently in my 2nd semester of Computer Science at Forman Christian College and University.
-        I’m passionate about technology, problem-solving, and continuously learning new things. My goal is to become a skilled software developer who creates meaningful digital experiences.
-      </p>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="section-title">Skills & Tools</div>
-    <div class="card">
-      <ul>
-        <li>Python (Beginner to Intermediate)</li>
-        <li>Version Control (Git & GitHub)</li>
-        <li>Teamwork & Communication</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="experience">
-    <div class="section-title">Experience & Education</div>
-    <div class="card">
-      <p><strong>Education:</strong></p>
-      <ul>
-        <li>O Levels – SCILS</li>
-        <li>A Levels – Beaconhouse</li>
-        <li>BS Computer Science – Forman Christian College and University (2nd Semester)</li>
-      </ul>
-      <br/>
-      <p><strong>Experience:</strong></p>
-      <ul>
-        <li>Participated in university-level coding workshops and hackathons</li>
-        <li>Built small web projects as part of academic coursework</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="interests">
-    <div class="section-title">Interests & Hobbies</div>
-    <div class="card">
-      <ul>
-        <li>Arts & Crafting</li>
-        <li>Baking and experimenting with new recipes</li>
-        <li>Exploring new tech trends and tools</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="section-title">My Projects</div>
-    <div class="card">
-      <div class="project">
-        <h3>Personal Portfolio Website</h3>
-        <p>A responsive website to showcase my academic journey, skills, and interests — built using HTML & CSS.</p>
+    <section id="about">
+      <div class="section-title">About Me</div>
+      <div class="card">
+        <p>
+          Hi! I'm Ayesha Ali Chaudhry, currently in my 2nd semester of Computer Science at Forman Christian College and University.
+          I’m passionate about technology, problem-solving, and continuously learning new things. My goal is to become a skilled software developer who creates meaningful digital experiences.
+        </p>
       </div>
-      <div class="project">
-        <h3>Connect 4 Game</h3>
-        <p>Designed and developed the game "Connect 4" as part of a class project, demonstrating basic game logic using programming principles.</p>
+    </section>
+
+    <section id="skills">
+      <div class="section-title">Skills & Tools</div>
+      <div class="card">
+        <ul>
+          <li>Python (Beginner to Intermediate)</li>
+          <li>Version Control (Git & GitHub)</li>
+          <li>Teamwork & Communication</li>
+        </ul>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <div class="section-title">Contact Me</div>
-    <div class="card">
-      <p><strong>Email:</strong> ayeshaalich2005@gmail.com</p>
-      <p><strong>Phone:</strong> +92-324-6601600</p>
-    </div>
-  </section>
+    <section id="experience">
+      <div class="section-title">Experience & Education</div>
+      <div class="card">
+        <p><strong>Education:</strong></p>
+        <ul>
+          <li>A Levels – Beaconhouse</li>
+          <li>BS Computer Science – Forman Christian College and University (2nd Semester)</li>
+        </ul>
+        <br/>
+        <p><strong>Experience:</strong></p>
+        <ul>
+          <li>Participated in university-level coding workshops and hackathons</li>
+          <li>Built small web projects as part of academic coursework</li>
+        </ul>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Ayesha Ali Chaudhry | Made with 💜 and HTML</p>
-  </footer>
+    <section id="interests">
+      <div class="section-title">Interests & Hobbies</div>
+      <div class="card">
+        <ul>
+          <li>Arts & Crafting</li>
+          <li>Baking and experimenting with new recipes</li>
+          <li>Exploring new tech trends and tools</li>
+        </ul>
+      </div>
+    </section>
 
+    <section id="projects">
+      <div class="section-title">My Projects</div>
+      <div class="card">
+        <div class="project">
+          <h3>Personal Portfolio Website</h3>
+          <p>A responsive website to showcase my academic journey, skills, and interests — built using HTML & CSS.</p>
+        </div>
+        <div class="project">
+          <h3>Connect 4 Game</h3>
+          <p>Designed and developed the game "Connect 4" as part of a class project, demonstrating basic game logic using programming principles.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">Contact Me</div>
+      <div class="card">
+        <p><strong>Email:</strong> ayeshaalich2005@gmail.com</p>
+        <p><strong>Phone:</strong> +92 324 6601600</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Ayesha Ali Chaudhry | Made with 💜 and HTML</p>
+    </footer>
+
+  </div>
 </body>
 </html>
