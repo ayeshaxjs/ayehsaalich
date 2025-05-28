@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #f9f0ff, #e0cfff);
+      color: #3d0066;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #9900cc;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #660066;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #cc0099;
+      text-align: center;
+    }
+
+    .about, .projects, .contact {
+      background: #fff;
+      border-radius: 15px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .about p {
+      font-size: 1.1rem;
+    }
+
+    .projects .project {
+      margin-bottom: 20px;
+    }
+
+    .projects .project h3 {
+      color: #9933cc;
+      margin-bottom: 5px;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input, .contact textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 2px solid #cc66cc;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+
+    .contact button {
+      background: #cc66cc;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f4e6ff;
+      color: #660066;
+    }
+
+    /* Animations */
+    .fade-in {
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="fade-in">
+    <h1>Hi, I'm Your Name</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about fade-in">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I'm a Computer Science student with a passion for coding, design, and all things tech. I love blending creativity with logic to create beautiful and functional projects. When I'm not coding, I enjoy reading about AI and decorating my space with LED lights!
+    </p>
+  </section>
+
+  <section id="projects" class="projects fade-in">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project">
+      <h3>✨ Portfolio Website</h3>
+      <p>A stylish personal website to showcase my CS journey and projects, built using HTML, CSS, and a splash of personality.</p>
+    </div>
+
+    <div class="project">
+      <h3>💻 Chat App</h3>
+      <p>A real-time chat app using Firebase and JavaScript with a clean UI and user authentication.</p>
+    </div>
+
+    <div class="project">
+      <h3>🌸 Pink-Powered Calculator</h3>
+      <p>A functional and aesthetic calculator web app built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact fade-in">
+    <h2 class="section-title">Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name | Designed with 💜 and Code</p>
+  </footer>
+
+</body>
+</html>
