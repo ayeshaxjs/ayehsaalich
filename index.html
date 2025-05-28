@@ -6,10 +6,10 @@
   <title>Ayesha Ali Chaudhry | Portfolio</title>
   <style>
     :root {
-      --bg-color: #f4f0f8;
-      --primary-color: #6a0dad;
-      --accent-color: #9370db;
-      --text-color: #2c003e;
+      --violet: #8a2be2;
+      --purple: #6a0dad;
+      --accent-color: #d6b3ff;
+      --text-color: #ffffff;
       --card-bg: #ffffff;
     }
 
@@ -21,12 +21,13 @@
     }
 
     body {
-      background-color: var(--bg-color);
+      background: linear-gradient(to bottom right, var(--violet), var(--purple));
       color: var(--text-color);
+      min-height: 100vh;
     }
 
     header {
-      background: var(--primary-color);
+      background: var(--purple);
       padding: 30px 20px;
       text-align: center;
       color: white;
@@ -52,7 +53,7 @@
 
     .section-title {
       font-size: 2rem;
-      color: var(--primary-color);
+      color: var(--accent-color);
       margin-bottom: 20px;
       text-align: center;
     }
@@ -62,7 +63,8 @@
       padding: 25px;
       margin-bottom: 40px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      color: #333;
     }
 
     .card p, .card ul {
@@ -81,37 +83,14 @@
 
     .project h3 {
       margin-bottom: 5px;
-      color: var(--accent-color);
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    input, textarea {
-      padding: 10px;
-      border: 2px solid var(--accent-color);
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-
-    button {
-      background: var(--primary-color);
-      color: white;
-      border: none;
-      padding: 12px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 1rem;
+      color: var(--purple);
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background: #eee;
-      color: var(--text-color);
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
     }
   </style>
 </head>
@@ -147,7 +126,6 @@
         <li>Python (Beginner to Intermediate)</li>
         <li>HTML, CSS, JavaScript (Basics)</li>
         <li>Version Control (Git & GitHub)</li>
-        <li>UI/UX basics using Figma</li>
         <li>Teamwork & Communication</li>
       </ul>
     </div>
@@ -158,9 +136,9 @@
     <div class="card">
       <p><strong>Education:</strong></p>
       <ul>
-        <li>Bachelor of Science in Computer Science (BSCS)</li>
-        <li>Forman Christian College and University, Lahore</li>
-        <li>Currently enrolled – 2nd semester</li>
+        <li>O Levels – SCIIL School</li>
+        <li>A Levels – Beaconhouse</li>
+        <li>BS Computer Science – Forman Christian College and University (2nd Semester)</li>
       </ul>
       <br/>
       <p><strong>Experience:</strong></p>
@@ -177,7 +155,6 @@
       <ul>
         <li>Arts & Crafting</li>
         <li>Baking and experimenting with new recipes</li>
-        <li>UI/UX Design and creative design tools</li>
         <li>Exploring new tech trends and tools</li>
       </ul>
     </div>
@@ -191,12 +168,8 @@
         <p>A responsive website to showcase my academic journey, skills, and interests — built using HTML & CSS.</p>
       </div>
       <div class="project">
-        <h3>Simple Calculator App</h3>
-        <p>A colorful calculator built using JavaScript with a clean and intuitive UI.</p>
-      </div>
-      <div class="project">
-        <h3>Mini Chat App (Demo)</h3>
-        <p>A demo app to simulate chat functionality using Firebase and vanilla JS (ongoing).</p>
+        <h3>Connect 4 Game</h3>
+        <p>Designed and developed the game "Connect 4" as part of a class project, demonstrating basic game logic using programming principles.</p>
       </div>
     </div>
   </section>
@@ -204,12 +177,8 @@
   <section id="contact">
     <div class="section-title">Contact Me</div>
     <div class="card">
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <p><strong>Email:</strong> ayesha.chaudhry@email.com</p>
+      <p><strong>Phone:</strong> +92-300-0000000</p>
     </div>
   </section>
 
