@@ -6,10 +6,10 @@
   <title>Ayesha Ali Chaudhry | Portfolio</title>
   <style>
     :root {
-      --violet: #8a2be2;
-      --purple: #6a0dad;
-      --accent-color: #d6b3ff;
-      --text-color: #ffffff;
+      --olive: #a9ba9d;
+      --beige: #f5f5dc;
+      --accent: #e0e6d3;
+      --text-color: #333;
       --card-bg: #ffffff;
     }
 
@@ -18,11 +18,12 @@
       padding: 0;
       box-sizing: border-box;
       font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
     }
 
     body {
-      background: 
-        linear-gradient(to bottom right, rgba(138, 43, 226, 0.6), rgba(106, 13, 173, 0.6)),
+      background:
+        linear-gradient(to bottom right, rgba(169, 186, 157, 0.7), rgba(245, 245, 220, 0.7)),
         url('WhatsApp Image 2025-05-28 at 17.42.14_113c8c46.jpg') no-repeat center center fixed;
       background-size: cover;
       color: var(--text-color);
@@ -30,18 +31,19 @@
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
+      background-color: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
       min-height: 100vh;
       padding-bottom: 40px;
     }
 
     header {
-      background: rgba(106, 13, 173, 0.85);
+      background: rgba(169, 186, 157, 0.9);
       padding: 30px 20px;
       text-align: center;
-      color: white;
+      color: var(--text-color);
+      animation: fadeIn 1s ease-out;
     }
 
     header h1 {
@@ -52,19 +54,25 @@
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: white;
+      color: var(--text-color);
       font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #6c7b5c;
     }
 
     section {
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
+      animation: fadeInUp 1s ease forwards;
     }
 
     .section-title {
       font-size: 2rem;
-      color: var(--accent-color);
+      color: var(--olive);
       margin-bottom: 20px;
       text-align: center;
     }
@@ -75,7 +83,13 @@
       margin-bottom: 40px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      color: #333;
+      color: var(--text-color);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
 
     .card p, .card ul {
@@ -94,14 +108,32 @@
 
     .project h3 {
       margin-bottom: 5px;
-      color: var(--purple);
+      color: #6c7b5c;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background: rgba(255, 255, 255, 0.1);
-      color: white;
+      background: rgba(169, 186, 157, 0.2);
+      color: var(--text-color);
+      animation: fadeIn 2s ease-out;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
@@ -193,7 +225,7 @@
     </section>
 
     <footer>
-      <p>&copy; 2025 Ayesha Ali Chaudhry | Made with 💜 and HTML</p>
+      <p>&copy; 2025 Ayesha Ali Chaudhry | Made with 💚 and HTML</p>
     </footer>
 
   </div>
