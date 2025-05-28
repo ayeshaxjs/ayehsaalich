@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>Ayesha Ali Chaudhry | Portfolio</title>
   <style>
+    :root {
+      --bg-color: #f4f0f8;
+      --primary-color: #6a0dad;
+      --accent-color: #9370db;
+      --text-color: #2c003e;
+      --card-bg: #ffffff;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -13,158 +21,200 @@
     }
 
     body {
-      background: linear-gradient(to right, #f9f0ff, #e0cfff);
-      color: #3d0066;
-      line-height: 1.6;
+      background-color: var(--bg-color);
+      color: var(--text-color);
     }
 
     header {
-      background: #fff;
-      padding: 20px;
+      background: var(--primary-color);
+      padding: 30px 20px;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      color: white;
     }
 
     header h1 {
       font-size: 2.5rem;
-      color: #9900cc;
-    }
-
-    nav {
-      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #660066;
-      font-weight: bold;
+      color: white;
+      font-weight: 500;
     }
 
     section {
       padding: 60px 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
 
     .section-title {
       font-size: 2rem;
+      color: var(--primary-color);
       margin-bottom: 20px;
-      color: #cc0099;
       text-align: center;
     }
 
-    .about, .projects, .contact {
-      background: #fff;
-      border-radius: 15px;
-      padding: 30px;
+    .card {
+      background: var(--card-bg);
+      padding: 25px;
       margin-bottom: 40px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
-    .about p {
-      font-size: 1.1rem;
+    .card p, .card ul {
+      font-size: 1.05rem;
+      line-height: 1.6;
     }
 
-    .projects .project {
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .project {
       margin-bottom: 20px;
     }
 
-    .projects .project h3 {
-      color: #9933cc;
+    .project h3 {
       margin-bottom: 5px;
+      color: var(--accent-color);
     }
 
-    .contact form {
+    form {
       display: flex;
       flex-direction: column;
+      gap: 15px;
     }
 
-    .contact input, .contact textarea {
-      margin-bottom: 15px;
+    input, textarea {
       padding: 10px;
-      border: 2px solid #cc66cc;
-      border-radius: 10px;
+      border: 2px solid var(--accent-color);
+      border-radius: 8px;
       font-size: 1rem;
     }
 
-    .contact button {
-      background: #cc66cc;
+    button {
+      background: var(--primary-color);
       color: white;
       border: none;
-      padding: 10px;
-      font-size: 1rem;
-      border-radius: 10px;
+      padding: 12px;
+      border-radius: 8px;
       cursor: pointer;
+      font-size: 1rem;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background: #f4e6ff;
-      color: #660066;
-    }
-
-    /* Animations */
-    .fade-in {
-      animation: fadeIn 1.2s ease-in;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
+      background: #eee;
+      color: var(--text-color);
     }
   </style>
 </head>
 <body>
 
-  <header class="fade-in">
-    <h1>Hi, I'm Your Name</h1>
+  <header>
+    <h1>Ayesha Ali Chaudhry</h1>
+    <p>Computer Science Student | FCCU</p>
     <nav>
       <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#interests">Interests</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section id="about" class="about fade-in">
-    <h2 class="section-title">About Me</h2>
-    <p>
-      I'm a Computer Science student with a passion for coding, design, and all things tech. I love blending creativity with logic to create beautiful and functional projects. When I'm not coding, I enjoy reading about AI and decorating my space with LED lights!
-    </p>
-  </section>
-
-  <section id="projects" class="projects fade-in">
-    <h2 class="section-title">Projects</h2>
-
-    <div class="project">
-      <h3>✨ Portfolio Website</h3>
-      <p>A stylish personal website to showcase my CS journey and projects, built using HTML, CSS, and a splash of personality.</p>
-    </div>
-
-    <div class="project">
-      <h3>💻 Chat App</h3>
-      <p>A real-time chat app using Firebase and JavaScript with a clean UI and user authentication.</p>
-    </div>
-
-    <div class="project">
-      <h3>🌸 Pink-Powered Calculator</h3>
-      <p>A functional and aesthetic calculator web app built with HTML, CSS, and JavaScript.</p>
+  <section id="about">
+    <div class="section-title">About Me</div>
+    <div class="card">
+      <p>
+        Hi! I'm Ayesha Ali Chaudhry, currently in my 2nd semester of Computer Science at Forman Christian College and University.
+        I’m passionate about technology, problem-solving, and continuously learning new things. My goal is to become a skilled software developer who creates meaningful digital experiences.
+      </p>
     </div>
   </section>
 
-  <section id="contact" class="contact fade-in">
-    <h2 class="section-title">Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <section id="skills">
+    <div class="section-title">Skills & Tools</div>
+    <div class="card">
+      <ul>
+        <li>Python (Beginner to Intermediate)</li>
+        <li>HTML, CSS, JavaScript (Basics)</li>
+        <li>Version Control (Git & GitHub)</li>
+        <li>UI/UX basics using Figma</li>
+        <li>Teamwork & Communication</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-title">Experience & Education</div>
+    <div class="card">
+      <p><strong>Education:</strong></p>
+      <ul>
+        <li>Bachelor of Science in Computer Science (BSCS)</li>
+        <li>Forman Christian College and University, Lahore</li>
+        <li>Currently enrolled – 2nd semester</li>
+      </ul>
+      <br/>
+      <p><strong>Experience:</strong></p>
+      <ul>
+        <li>Participated in university-level coding workshops and hackathons</li>
+        <li>Built small web projects as part of academic coursework</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="interests">
+    <div class="section-title">Interests & Hobbies</div>
+    <div class="card">
+      <ul>
+        <li>Arts & Crafting</li>
+        <li>Baking and experimenting with new recipes</li>
+        <li>UI/UX Design and creative design tools</li>
+        <li>Exploring new tech trends and tools</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-title">My Projects</div>
+    <div class="card">
+      <div class="project">
+        <h3>Personal Portfolio Website</h3>
+        <p>A responsive website to showcase my academic journey, skills, and interests — built using HTML & CSS.</p>
+      </div>
+      <div class="project">
+        <h3>Simple Calculator App</h3>
+        <p>A colorful calculator built using JavaScript with a clean and intuitive UI.</p>
+      </div>
+      <div class="project">
+        <h3>Mini Chat App (Demo)</h3>
+        <p>A demo app to simulate chat functionality using Firebase and vanilla JS (ongoing).</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-title">Contact Me</div>
+    <div class="card">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Your Name | Designed with 💜 and Code</p>
+    <p>&copy; 2025 Ayesha Ali Chaudhry | Made with 💜 and HTML</p>
   </footer>
 
 </body>
